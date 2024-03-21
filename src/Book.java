@@ -23,5 +23,18 @@ public class Book {
     public int getReleaseYear(){
         return this.releaseYear;
     }
+    @Override
+    public String toString(){
+        return this.title + " " +
+                this.pages + " " +
+                this.releaseYear;
+
+    }
+    public Book(String title, int pages, int releaseYear){
+        this.title = title;
+        this.pages = pages;
+        this.releaseYear = releaseYear;
+
+    }
 
 }
