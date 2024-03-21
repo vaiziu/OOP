@@ -38,12 +38,13 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
         ArrayList<Book> books = new ArrayList<>();
 
 
-        knyga.add("Nesbo");
-        knyga1.add("Lietuvos istorija");
-        knyga2.add("20.000 myliu po vandeniu");
-        System.out.println(knyga.get(0));
-        System.out.println(knyga1.get(1));
-        System.out.println(knyga2.get(2));
+        books.add("Nesbo");
+        books.add("Lietuvos istorija");
+        books.add("20.000 myliu po vandeniu");
+        System.out.println(books);
+//        System.out.println(knyga.get(0));
+//        System.out.println(knyga1.get(1));
+//        System.out.println(knyga2.get(2));
 
 
 
