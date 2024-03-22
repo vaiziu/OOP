@@ -59,6 +59,7 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
         plant.setOneYear(true);
         plant.setMainland("Lietuva");
         plant.setHeight(12.0);
+        plant.setEatable(true);
 
 
 

@@ -3,8 +3,7 @@ public class Plant {
     private Boolean oneYear ;
     private String mainland ;
     private Double height ;
-    private Boolean x;
-
+    private Boolean eatable;
 
 
 
@@ -42,19 +41,20 @@ public class Plant {
     public double getHeight(){
         return this.height;
     }
-    public void setX(Boolean x) {
-        this.x = x;
+    public void setEatable(Boolean eatable) {
+        this.eatable = eatable;
     }
     public double getX(){
-        return this.x;
+        return this.eatable ;
     }
+
     @Override
     public String toString() {
         return this.name + " " +
                 this.oneYear + " " +
                 this.mainland + " " +
                 this.height + " " +
-                this.x ;
+                this.eatable ;
     }
 //    public Book(String title, int pages, int releaseYear){
 //        this.title = title;
