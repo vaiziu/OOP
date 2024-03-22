@@ -5,7 +5,7 @@ public class Main {
 
         System.out.println("Hello world!");
 
-        Book knyga = new Book ();
+        Book knyga = new Book();
         knyga.setTitle("Nesbo");
         knyga.setPages(600);
         knyga.setReleaseYear(1990);
@@ -13,7 +13,7 @@ public class Main {
 //        System.out.println(knyga.getPages());
 //        System.out.println(knyga.getReleaseYear());
 
-        Book knyga1 =new Book();
+        Book knyga1 = new Book();
         knyga1.setTitle("Lietuvos istorija");
         knyga1.setPages(650);
         knyga1.setReleaseYear(1998);
@@ -27,9 +27,9 @@ public class Main {
         knyga2.setPages(350);
         knyga2.setReleaseYear(1998);
 
-Book newknyga = new Book ("pepe",0,0);
-Book newknyga1 = new Book("ilgakojine",12,54);
-Book newknyga2 = new Book("ai zodziu", 25,2024);
+        Book newknyga = new Book("pepe", 0, 0);
+        Book newknyga1 = new Book("ilgakojine", 12, 54);
+        Book newknyga2 = new Book("ai zodziu", 25, 2024);
 
 //        System.out.println(newknyga);
 //        System.out.println(newknyga1);
@@ -44,7 +44,7 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
         books.add(newknyga1);
         books.add(newknyga2);
         for (int i = 0; i < books.size(); i++) {
-            System.out.println(books.get(i).getTitle()+  " " + books.get(i).getPages()+" " +  books.get(i).getReleaseYear());
+            System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYear());
         }
 
 //        System.out.println(knyga.get(0));
@@ -53,20 +53,52 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
 
 // PLANTS PLANTS
 
-        Plant plant = new Plant ();
+        Plant plant = new Plant();
 
         plant.setName("Klevas");
-        plant.setOneYear(true);
+        plant.setOneYear(false);
         plant.setMainland("Lietuva");
         plant.setHeight(12.0);
         plant.setEatable(true);
+        System.out.println(plant);
 
+        Plant plant1 = new Plant();
 
+        plant1.setName("zibute");
+        plant1.setOneYear(true);
+        plant1.setMainland("Lietuva");
+        plant1.setHeight(0.25);
+        plant1.setEatable(false);
+        System.out.println(plant1);
+
+        Plant plant2 = new Plant("tulpe", true, "Lietuva", 0.2, false);
+        Plant plant3 = new Plant("pipiras", false, "Kuba", 0.3, true);
+        System.out.println(plant2);
+
+        ArrayList<Plant> plants = new ArrayList<>();
+        plants.add(plant);
+        plants.add(plant1);
+        plants.add(plant2);
+        plants.add(plant3);
+
+//        for (Plant augalas : plants) {
+//            for (( int a = 0; a < plants.size(); a++))
+//
+//        }
+//
+//
+//    }
+
+        for (int a = 0; a < plants.size(); a++) {
+
+            System.out.println(plants.get(a).getName() + " " + plants.get(a).getOneYaear() + " " + plants.get(a).getMainLand() + " " + plants.get(a).getHeight() + " " + plants.get(a).getEatable());
+        }
 
 
 
 
     }
+
 
 
 }

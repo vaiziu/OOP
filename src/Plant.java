@@ -1,18 +1,11 @@
 public class Plant {
     private String name;
-    private Boolean oneYear ;
+    private boolean oneYear ;
     private String mainland ;
-    private Double height ;
-    private Boolean eatable;
+    private double height ;
+    private boolean eatable;
 
 
-
-//    Pavadinimas
-//lotyniskas pavadinimas
-//boolean vienmetis
-//kokiam zemyne auga
-//suaugusio augalo aukstis metrais.
-//ar valgomas?
     public Plant(){
 
     }
@@ -32,7 +25,7 @@ public class Plant {
     public void setMainland(String mainland) {
         this.mainland = mainland;
     }
-    public int getMainLand(){
+    public String getMainLand(){
         return this.mainland;
     }
     public void setHeight(double height) {
@@ -44,25 +37,26 @@ public class Plant {
     public void setEatable(Boolean eatable) {
         this.eatable = eatable;
     }
-    public double getX(){
+    public boolean getEatable(){
         return this.eatable ;
     }
 
     @Override
     public String toString() {
-        return this.name + " " +
-                this.oneYear + " " +
-                this.mainland + " " +
-                this.height + " " +
-                this.eatable ;
-    }
-//    public Book(String title, int pages, int releaseYear){
-//        this.title = title;
-//        this.pages = pages;
-//        this.releaseYear = releaseYear;
-
+        return this.name + " " + "yra" + " " +
+                this.oneYear  + " " +
+                this.mainland + " aukstis: " + " " +
+                this.height +  "m., " + " " +
+                this.eatable + "." ;
     }
 
+    public Plant(String name, boolean oneYear, String mainland, double height, boolean eatable){
+        this.name =name;
+        this.oneYear = oneYear;
+        this.mainland = mainland;
+        this.height = height;
+        this.eatable = eatable;
+    }
 
 
 
