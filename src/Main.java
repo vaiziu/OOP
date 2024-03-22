@@ -23,6 +23,7 @@ public class Main {
 
         Book knyga2 = new Book();
         knyga2.setTitle("20.000 myliu po vandeniu");
+        knyga2.setTitle("20k loves underwater");
         knyga2.setPages(350);
         knyga2.setReleaseYear(1998);
 
@@ -30,14 +31,12 @@ Book newknyga = new Book ("pepe",0,0);
 Book newknyga1 = new Book("ilgakojine",12,54);
 Book newknyga2 = new Book("ai zodziu", 25,2024);
 
-        System.out.println(newknyga);
-        System.out.println(newknyga1);
-        System.out.println(newknyga2);
+//        System.out.println(newknyga);
+//        System.out.println(newknyga1);
+//        System.out.println(newknyga2);
 
 
         ArrayList<Book> books = new ArrayList<>();
-
-
         books.add(knyga);
         books.add(knyga1);
         books.add(knyga2);
@@ -45,10 +44,10 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
         books.add(newknyga1);
         books.add(newknyga2);
         for (int i = 0; i < books.size(); i++) {
-            
+            System.out.println(books.get(i).getTitle()+  " " + books.get(i).getPages()+" " +  books.get(i).getReleaseYear());
         }
 
-        System.out.println(books.get(i).getTitle()+ get.Pages()+ get.ReleaseYear(());
+
 
 //        System.out.println(knyga.get(0));
 //        System.out.println(knyga1.get(1));
