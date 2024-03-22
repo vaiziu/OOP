@@ -47,17 +47,19 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
             System.out.println(books.get(i).getTitle()+  " " + books.get(i).getPages()+" " +  books.get(i).getReleaseYear());
         }
 
-
-
 //        System.out.println(knyga.get(0));
 //        System.out.println(knyga1.get(1));
 //        System.out.println(knyga2.get(2));
 
+// PLANTS PLANTS
 
+        Plant plant = new Plant ();
 
-
-
-
+        plant.setName("Klevas");
+//        plant.setOneYear(1.0);
+        plant.setMainland("Lietuva");
+        plant.setHeight(12.0);
+        System.out.println(plant.getName());
 
 
 
