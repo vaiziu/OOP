@@ -48,7 +48,7 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
             
         }
 
-        System.out.println(books);
+        System.out.println(books.get(i).getTitle()+ get.Pages()+ get.ReleaseYear(());
 
 //        System.out.println(knyga.get(0));
 //        System.out.println(knyga1.get(1));
