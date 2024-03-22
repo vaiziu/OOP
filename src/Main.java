@@ -47,6 +47,8 @@ public class Main {
             System.out.println(books.get(i).getTitle() + " " + books.get(i).getPages() + " " + books.get(i).getReleaseYear());
         }
 
+        System.out.println("--------");
+
 //        System.out.println(knyga.get(0));
 //        System.out.println(knyga1.get(1));
 //        System.out.println(knyga2.get(2));
@@ -61,6 +63,7 @@ public class Main {
         plant.setHeight(12.0);
         plant.setEatable(true);
         System.out.println(plant);
+        System.out.println("_____________");
 
         Plant plant1 = new Plant();
 
@@ -70,35 +73,30 @@ public class Main {
         plant1.setHeight(0.25);
         plant1.setEatable(false);
         System.out.println(plant1);
+        System.out.println("-------------------");
 
         Plant plant2 = new Plant("tulpe", true, "Lietuva", 0.2, false);
         Plant plant3 = new Plant("pipiras", false, "Kuba", 0.3, true);
-        System.out.println(plant2);
+//        System.out.println(plant2);
+        System.out.println("--------");
 
         ArrayList<Plant> plants = new ArrayList<>();
         plants.add(plant);
         plants.add(plant1);
         plants.add(plant2);
         plants.add(plant3);
+        for (Plant augalas : plants) {
+            System.out.println(augalas);
 
-//        for (Plant augalas : plants) {
-//            for (( int a = 0; a < plants.size(); a++))
-//
-//        }
-//
-//
-//    }
-
-        for (int a = 0; a < plants.size(); a++) {
-
-            System.out.println(plants.get(a).getName() + " " + plants.get(a).getOneYaear() + " " + plants.get(a).getMainLand() + " " + plants.get(a).getHeight() + " " + plants.get(a).getEatable());
         }
-
-
-
 
     }
 
-
-
 }
+
+
+
+//        for (int a = 0; a < plants.size(); a++) {
+//
+//            System.out.println(plants.get(a).getName() + " " + plants.get(a).getOneYaear() + " " + plants.get(a).getMainLand() + " " + plants.get(a).getHeight() + " " + plants.get(a).getEatable());
+//        }

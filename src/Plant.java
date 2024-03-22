@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Plant {
     private String name;
-    private boolean oneYear ;
-    private String mainland ;
+    private boolean oneYear ; // geriau butu annual
+    private String mainland ; // geriau butu plantContinent
     private double height ;
-    private boolean eatable;
+    private boolean eatable; // geriau butu isEatable
 
 
     public Plant(){
@@ -43,7 +46,7 @@ public class Plant {
 
     @Override
     public String toString() {
-        return this.name + " " + "yra" + " " +
+        return this.name + " " + " " +
                 this.oneYear  + " " +
                 this.mainland + " aukstis: " + " " +
                 this.height +  "m., " + " " +
