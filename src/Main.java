@@ -56,10 +56,10 @@ Book newknyga2 = new Book("ai zodziu", 25,2024);
         Plant plant = new Plant ();
 
         plant.setName("Klevas");
-//        plant.setOneYear(1.0);
+        plant.setOneYear(true);
         plant.setMainland("Lietuva");
         plant.setHeight(12.0);
-        System.out.println(plant.getName());
+
 
 
 
