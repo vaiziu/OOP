@@ -22,7 +22,7 @@ public class Plant {
     public void setOneYear(boolean oneYear) {
         this.oneYear = oneYear;
     }
-    public boolean getOneYaear(){
+    public boolean getOneYear(){
         return this.oneYear;
     }
     public void setMainland(String mainland) {
